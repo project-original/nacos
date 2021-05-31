@@ -21,14 +21,14 @@
         <groupId>com.alibaba.nacos</groupId>
         <version>${revision}</version>
     </parent>
-    
+
     <modelVersion>4.0.0</modelVersion>
     <artifactId>nacos-istio</artifactId>
     <packaging>jar</packaging>
-    
+
     <name>nacos-istio ${project.version}</name>
     <url>http://nacos.io</url>
-    
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -55,7 +55,7 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>nacos-core</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-netty-shaded</artifactId>
@@ -90,7 +90,7 @@
             <artifactId>netty-common</artifactId>
         </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -128,4 +128,12 @@
             </resource>
         </resources>
     </build>
+
+
+    <repositories>
+        <repository>
+            <id>repository</id>
+            <url>https://maven.pkg.github.com/project-original/nacos</url>
+        </repository>
+    </repositories>
 </project>

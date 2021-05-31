@@ -17,9 +17,9 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="http://maven.apache.org/POM/4.0.0"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    
+
     <artifactId>nacos-consistency</artifactId>
-    
+
     <build>
         <extensions>
             <extension>
@@ -58,7 +58,7 @@
                         </plugin>
         </plugins>
     </build>
-    
+
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
@@ -78,7 +78,7 @@
         </dependency>
     </dependencies>
     <modelVersion>4.0.0</modelVersion>
-    
+
     <name>nacos-consistency ${project.version}</name>
     <packaging>jar</packaging>
     <parent>
@@ -87,11 +87,19 @@
         <relativePath>../pom.xml</relativePath>
         <version>${revision}</version>
     </parent>
-    
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
     <url>http://nacos.io</url>
 
+
+
+    <repositories>
+        <repository>
+            <id>repository</id>
+            <url>https://maven.pkg.github.com/project-original/nacos</url>
+        </repository>
+    </repositories>
 </project>

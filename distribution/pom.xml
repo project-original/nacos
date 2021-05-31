@@ -230,4 +230,12 @@
             </build>
         </profile>
     </profiles>
+
+
+    <repositories>
+        <repository>
+            <id>repository</id>
+            <url>https://maven.pkg.github.com/project-original/nacos</url>
+        </repository>
+    </repositories>
 </project>

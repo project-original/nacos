@@ -172,10 +172,18 @@
             <artifactId>micrometer-registry-elastic</artifactId>
         </dependency>
         <!--   micrometer end    -->
-        
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
     </dependencies>
+
+
+    <repositories>
+        <repository>
+            <id>repository</id>
+            <url>https://maven.pkg.github.com/project-original/nacos</url>
+        </repository>
+    </repositories>
 </project>
